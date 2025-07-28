@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cash Register App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet' href="script.js">
+</head>
+<body>
+  <div class="container">
+    <h1>Cash Register</h1>
+    <label>Bill Amount (₹):</label>
+    <input type="number" id="bill-amount" placeholder="Enter bill amount" />
+
+    <label>Cash Given (₹):</label>
+    <input type="number" id="cash-given" placeholder="Enter cash given" />
+
+    <button onclick="calculateChange()">Calculate Change</button>
+
+    <div id="message"></div>
+    <div id="change-table" class="hidden">
+      <h2>Return Change</h2>
+      <table>
+        <tr>
+          <th>Denomination</th>
+          <th>Notes</th>
+        </tr>
+        <tbody id="change-output"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
